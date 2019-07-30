@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars Scraping Project</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container-fluid" style="background-color: #ba0e02">
+    <div class="jumbotron text-center">
+      <h1>Mars.</h1>
+      <p>Click to get the latest info on Mars.</p>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Data!</a></p>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <h3>Today's Featured Image:</h3>
+        <img class="photo" src="{{ mars.Image }}" alt="Mars">
+
+        <h3>Latest Mars News</h3>
+        <h5>{{ mars.News_Title }}</h5>
+        <h6>{{ mars.News_Para }}</h6>
+        </div>
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                  <h3>Current Weather on Mars:</h3>
+                  {{ mars.Weather }}
+                <h3>Mars Facts:</h3>
+                <table border="1" class="dataframe">
+                    <thead>
+                      <tr style="text-align: right;">
+                        <th></th>
+                        <th>Value</th>
+                      </tr>
+                      <tr>
+                        <th>Attribute</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>Equatorial Diameter:</th>
+                        <td>6,792 km</td>
+                      </tr>
+                      <tr>
+                        <th>Polar Diameter:</th>
+                        <td>6,752 km</td>
+                      </tr>
+                      <tr>
+                        <th>Mass:</th>
+                        <td>6.39x10^23 kg (0.11 Earths)</td>
+                      </tr>
+                      <tr>
+                        <th>Moons:</th>
+                        <td>2 (Phobos &amp; Deimos)</td>
+                      </tr>
+                      <tr>
+                        <th>Orbit Distance:</th>
+                        <td>227,943,824 km (1.38 AU)</td>
+                      </tr>
+                      <tr>
+                        <th>Orbit Period:</th>
+                        <td>687 days (1.9 years)</td>
+                      </tr>
+                      <tr>
+                        <th>Surface Temperature:</th>
+                        <td>-87 to -5C</td>
+                      </tr>
+                      <tr>
+                        <th>First Record:</th>
+                        <td>2nd millennium BC</td>
+                      </tr>
+                      <tr>
+                        <th>Recorded By:</th>
+                        <td>Egyptian astronomers</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </div>
+              </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+      <h2 class="text-center">Look at these beautiful hemispheres:</h2>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="card mb-3">
+                <img class="card-img-top" src="{{ mars.Valles }}" alt="Card image cap" width="80%" height="80%">
+                <div class="card-body" style="background-color: darkgrey">
+                  <h5 class="card-title">Valles Marineris</h5>
+                </div>
+                </div>
+        </div>
+                
+        <div class="col-lg-6">
+         <div class="card mb-3">
+         <img class="card-img-top" src="{{ mars.Cerberus }}" alt="Card image cap" width="80%" height="80%">
+         <div class="card-body" style="background-color: darkgrey">
+         <h5 class="card-title">Cerberus</h5>
+        </div>
+        </div>
+        </div>
+
+        </div>
+
+    
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="card mb-3">
+                <img class="card-img-top" src="{{ mars.Schia }}" alt="Card image cap" width="80%" height="80%">
+                <div class="card-body" style="background-color: darkgrey">
+                  <h5 class="card-title">Schiaparelli</h5>
+                </div>
+                </div>
+        </div>
+                
+                <div class="col-lg-6">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="{{ mars.Syrtis }}" alt="Card image cap" width="80%" height="80%">
+                        <div class="card-body" style="background-color: darkgrey">
+                          <h5 class="card-title">Syrtis Major</h5>
+                        </div>
+                        </div>
+                </div>
+
+        </div>
+
+    </div>
+
+  
+</body>
+
+</html>

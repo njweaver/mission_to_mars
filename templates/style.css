@@ -1,0 +1,17 @@
+.photo{
+    width: 50%;
+    height: 50%;
+}
+
+.panel panel-default{
+    max-width: 80%
+}
+
+.centertext{
+    text-align: center;
+}
+
+.card-img-top{
+    width: 80%;
+    height: 80%;
+}
